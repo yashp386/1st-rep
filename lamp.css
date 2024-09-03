@@ -141,17 +141,11 @@ body {
   }
   input {
     --c: #00008b;
-    /* active color */
     --g: 2px;
-    /* the gap */
     --l: 5px;
-    /* line thickness*/
     --s: 20px;
-    /* thumb size*/
-  
     width: 100%;
     height: var(--s);
-    /* needed for Firefox*/
     --_c: color-mix(in srgb, var(--c), #000 var(--p, 0%));
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -160,18 +154,14 @@ body {
     cursor: pointer;
     overflow: hidden;
   }
-  
   input:focus-visible,
   input:hover {
     --p: 25%;
   }
-  
   input:active,
   input:focus-visible {
     --_b: var(--s);
   }
-  
-  /* chromium */
   input[type="range" i]::-webkit-slider-thumb {
     height: var(--s);
     aspect-ratio: 1;
